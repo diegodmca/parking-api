@@ -10,11 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ParkingApiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ParkingApiApplication.class, args);
-	}
-	@GetMapping("/")
-	public String index(){
-		return "Olá Mundo!";
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ParkingApiApplication.class, args);
+    }
+
+    @GetMapping("/")
+    public String index() {
+        return "Olá Mundo!";
+    }
 }
